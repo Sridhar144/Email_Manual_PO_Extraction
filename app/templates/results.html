@@ -96,11 +96,8 @@
         
         {% if attachments %}
         <h3>Attachment Content:</h3>
-        <ul>
-            {% for attachment in attachments %}
-                <li><p>{{ attachment }}</p></li>
-            {% endfor %}
-        </ul>
+        <h5>{{ attachment }}</h5>
+                
         {% endif %}
     </div>
     <a href="{{ url_for('ui.home') }}">Fetch Emails from Input</a>
