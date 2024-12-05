@@ -1,0 +1,16 @@
+flask                     
+transformers              
+torch                     
+PyPDF2                    
+pytesseract                
+pillow                    
+python-docx                
+pandas                     
+google-api-python-client   
+google-auth               
+google-auth-oauthlib      
+imapclient                
+beautifulsoup4            
+email-validator           
+pytest                    
+pytest-flask              
