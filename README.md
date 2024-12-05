@@ -1,6 +1,6 @@
 ﻿**Email, Manual Purchase Order Extraction**
 
-This repository contains the solution for the AI Intern task, which focuses on email classification and extraction of Purchase Order (PO) details from emails. The system uses machine learning models and various Python libraries to classify emails and extract useful data.![ref1]
+This repository contains the solution for the AI Intern task, which focuses on email classification and extraction of Purchase Order (PO) details from emails. The system uses machine learning models and various Python libraries to classify emails and extract useful data.
 
 **Setup Instructions**
 
@@ -19,7 +19,7 @@ This repository contains the solution for the AI Intern task, which focuses on e
 - docx
 - openai (if using GPT model)
 
-To install them, run: Copy code
+To install them, run: 
 
 pip install -r requirements.txt
 
@@ -38,42 +38,37 @@ pip install -r requirements.txt
 2. **PO Extraction:**
 - If the email is classified as a PO, the system parses the body of the email for key information such as PO number, product details, quantities, and total order value.
 3. **Attachments Handling:**
-- Attachments such as PDFs, images, DOCX files, and Excel sheets are extracted and parsed as necessary.![ref1]
+- Attachments such as PDFs, images, DOCX files, and Excel sheets are extracted and parsed as necessary.
 
 **Key Challenges Faced**
 
 - **Model Accuracy**: Ensuring the email classifier correctly identifies POs amidst other email types.
 - **Data Extraction**: Extracting structured information (PO number, products, quantities) from unstructured email bodies.
-- **Handling Attachments**: Parsing different attachment formats (PDF, image, Excel) with correct handling for each type.![ref1]
+- **Handling Attachments**: Parsing different attachment formats (PDF, image, Excel) with correct handling for each type.
 
 **Test Cases and Coverage**
 
 The system was tested with a variety of test cases to ensure robustness. Below are the key test cases:
 
 - **Test Case 1**: Classifying emails with valid PO formats.
-- **Expected Result**: The email is classified as "PO" and PO details are extracted.
-- **Status**: Passed
+  **Expected Result**: The email is classified as "PO" and PO details are extracted.
+  **Status**: Passed
 - **Test Case 2**: Classifying non-PO emails (e.g., newsletters, personal emails).
-- **Expected Result**: The email is classified as not a "PO".
-- **Status**: Passed
+  **Expected Result**: The email is classified as not a "PO".
+  **Status**: Passed
 - **Test Case 3**: Handling emails with attachments (PDF, images, Excel).
-- **Expected Result**: Attachments are correctly extracted and parsed.
-- **Status**: Passed
+  **Expected Result**: Attachments are correctly extracted and parsed.
+  **Status**: Passed
 - **Test Case 4**: Invalid email formats or missing PO information.
-- **Expected Result**: The system returns an appropriate error or fallback message.
-- **Status**: Passed![ref1]
+  **Expected Result**: The system returns an appropriate error or fallback message.
+  **Status**: Passed
 
-**Screenshots & Video Walkthrough**
+**How to Use**
 
-Screenshots and a video walkthrough demonstrating the system in action have been included in the repository. The video shows the complete flow from email receipt to PO extraction.
-
-**How to Use![ref1]**
-
-Start the Flask application: Copy code
+Start the Flask application: 
 
 python app.py
 
 1. Open the application in your browser (typically at http://127.0.0.1:5000).
-1. Submit email details via the form, or allow the system to fetch and classify emails from the connected inbox.![ref1]
+1. Submit email details via the form, or allow the system to fetch and classify emails from the connected inbox.
 
-[ref1]: Aspose.Words.1a8e351d-6e1c-4a52-b439-5abf22b1bb2c.001.png
